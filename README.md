@@ -1,4 +1,6 @@
-# [Material Kit - Free Bootstrap UI Kit](http://www.creative-tim.com/product/material-kit)
+# [Material Kit - Free Bootstrap UI Kit](http://demos.creative-tim.com/material-kit/index.html)
+
+![alt text](http://s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg "Material Kit Free")
 
 Material Kit is a Free Bootstrap UI Kit with a fresh, new design inspired by Google's material design. You asked for it, so we built it. It's a great pleasure to introduce to you the material concepts in an easy to use and beautiful set of components. Along with the restyling of the Bootstrap elements, you will find three fully-coded example pages, to help you design your next project.
 
@@ -11,14 +13,13 @@ Material Kit is based on the Github Repo from Fez (http://fezvrasta.github.io/bo
 ## Links:
 
 + [Live Preview](http://demos.creative-tim.com/material-kit/index.html)
-+ [Rails Gem](https://github.com/UiReady/material_kit/)
-+ Material Kit PRO - coming soon (from $39)
++ [Material Kit PRO](http://demos.creative-tim.com/material-kit-pro/presentation.html)
 
 ## Quick start
 
 Quick start options:
 
-- [Download from Github](https://github.com/timcreative/material-kit/releases/tag/v1.0).
+- [Download from Github](https://github.com/timcreative/material-kit/releases/tag/v1.0.1).
 - [Download from Creative Tim](http://www.creative-tim.com/product/material-kit).
 - Clone the repo: `git clone https://github.com/timcreative/material-kit.git`.
 

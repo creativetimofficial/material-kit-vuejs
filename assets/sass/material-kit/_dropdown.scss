@@ -2,18 +2,6 @@
     border: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
-    @include transition($fast-transition-time, $transition-linear);
-    margin-top: -20px;
-    opacity: 0;
-    visibility: hidden;
-    display: block;
-
-    .open &{
-        opacity: 1;
-        visibility: visible;
-        margin-top: 1px;
-    }
-
     .divider {
         background-color: rgba(0, 0, 0, .12);
     }
@@ -46,4 +34,25 @@
     .divider{
         margin: 5px 0;
     }
+}
+
+@media (min-width: $screen-md-min){
+    .dropdown{
+        .dropdown-menu{
+            @include transition($fast-transition-time, $transition-linear);
+            margin-top: -20px;
+            opacity: 0;
+            visibility: hidden;
+            display: block;
+        }
+
+        &.open{
+            .dropdown-menu{
+                opacity: 1;
+                visibility: visible;
+                margin-top: 1px;
+            }
+        }
+    }
+
 }

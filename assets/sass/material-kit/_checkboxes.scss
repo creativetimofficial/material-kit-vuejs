@@ -25,22 +25,24 @@
   .checkbox-material {
     vertical-align: middle;
     position: relative;
-    top: 3px;
+    top: 1px;
     padding-right: 5px;
+    display: inline-block;
 
     &:before {
-      display: block;
-      position: absolute;
-      left: 0;
-      content: "";
-      background-color: rgba(0,0,0,.84);
-      height: $mdb-checkbox-size;
-      width: $mdb-checkbox-size;
-      border-radius: 100%;
-      z-index: 1;
-      opacity: 0;
-      margin: 0;
-      transform: scale3d(2.3, 2.3, 1);
+        display: block;
+        position: absolute;
+        left: 0;
+        content: "";
+        background-color: rgba(0,0,0,.84);
+        height: $mdb-checkbox-size;
+        width: $mdb-checkbox-size;
+        border-radius: 100%;
+        z-index: 1;
+        opacity: 0;
+        margin: 0;
+        top: 0;
+        transform: scale3d(2.3, 2.3, 1);
     }
 
     .check {

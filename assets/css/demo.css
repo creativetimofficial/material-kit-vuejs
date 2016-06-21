@@ -236,7 +236,12 @@
         width: 960px;
     }
 }
-
+@media (max-width: 991px){
+    .fixed-section.affix{
+        position: relative;
+        margin-bottom: 100px;
+    }
+}
 @media (max-width: 768px){
     .btn, .btn-morphing{
         margin-bottom: 10px;
