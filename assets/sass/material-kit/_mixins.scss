@@ -226,6 +226,14 @@
         transform: scale($value);
 }
 
+@mixin transform-scale3d($value){
+     -webkit-transform: scale3d($value);
+        -moz-transform: scale3d($value);
+        -o-transform: scale3d($value);
+        -ms-transform: scale3d($value);
+        transform: scale3d($value);
+}
+
 @mixin transform-translate-x($value){
      -webkit-transform:  translate3d($value, 0, 0);
         -moz-transform: translate3d($value, 0, 0);
@@ -234,10 +242,85 @@
         transform: translate3d($value, 0, 0);
 }
 
+@mixin transform-translate-y($value){
+     -webkit-transform:  translate3d(0,$value, 0);
+        -moz-transform: translate3d(0, $value, 0);
+        -o-transform: translate3d(0, $value, 0);
+        -ms-transform: translate3d(0, $value, 0);
+        transform: translate3d(0, $value, 0);
+}
+
 @mixin transform-origin($coordinates){
       -webkit-transform-origin: $coordinates;
         -moz-transform-origin: $coordinates;
         -o-transform-origin: $coordinates;
         -ms-transform-origin: $coordinates;
         transform-origin: $coordinates;
+}
+
+@mixin animation($value){
+      -webkit-animation: $value;
+        -moz-animation: $value;
+        -o-animation: $value;
+        -ms-animation: $value;
+        animation: $value;
+}
+
+// Mixins for buttons
+
+@mixin btn-styles($btn-color) {
+
+    // remove this line if you want black shadows
+    @include shadow-2dp-color($btn-color);
+
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:active:focus,
+    &:active:hover,
+    &.active:focus,
+    &.active:hover,
+    .open > &.dropdown-toggle,
+    .open > &.dropdown-toggle:focus,
+    .open > &.dropdown-toggle:hover {
+      background-color: $btn-color;
+      color: $white-color;
+    }
+
+    &:focus,
+    &:active,
+    &:hover{
+      // remove this line if you want black shadows
+      @include button-shadow-color($btn-color);
+    }
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+        box-shadow: none;
+    }
+  }
+
+  &.btn-simple{
+      background-color: transparent;
+      color: $btn-color;
+      box-shadow: none;
+
+      &:hover,
+      &:focus,
+      &:active{
+          background-color: transparent;
+          color: $btn-color;
+      }
+  }
+
 }

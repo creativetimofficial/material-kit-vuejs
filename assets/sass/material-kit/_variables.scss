@@ -28,6 +28,7 @@ $brand-success: $green !default;
 $brand-danger: $red !default;
 $brand-warning: $yellow !default;
 $brand-info: $light-blue !default;
+$brand-rose: $pink !default;
 
 $border-radius-base: 3px !default;
 $border-radius-small: 2px !default;
@@ -41,6 +42,8 @@ $headings-font-weight: 300 !default;
 $font-weight-light: 300 !default;
 $font-weight-default: 400 !default;
 $font-weight-bold:    500 !default;
+$font-weight-extra-bold: 700 !default;
+$font-weight-ultra-bold: 900 !default;
 
 $body-bg: #EEEEEE !default;
 //---
@@ -138,6 +141,7 @@ $mdb-checkbox-checked-color: $brand-primary !default;
 
 $mdb-checkbox-label-color: $mdb-label-color !default;
 $mdb-checkbox-border-color: $mdb-label-color-toggle-focus !default;
+$checkbox-transform-scale: 2.3, 2.3, 1 !default;
 
 // Popovers and Popups
 $mdb-popover-background: rgba(101, 101, 101, 0.9) !default;

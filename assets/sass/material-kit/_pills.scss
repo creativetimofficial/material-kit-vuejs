@@ -10,6 +10,10 @@
             text-align: center;
             color: $gray;
             transition: all .3s;
+
+            &:hover{
+                background-color: rgba(200, 200, 200, 0.2);
+            }
         }
 
         i{
@@ -24,9 +28,10 @@
             &:hover{
                 background-color: $brand-primary;
                 color: $white-color;
-                @include shadow-big();
+                @include shadow-big-color($brand-primary);
             }
         }
+
     }
 
     &.nav-pills-info{
@@ -36,6 +41,7 @@
                 &:focus,
                 &:hover{
                     background-color: $brand-info;
+                    @include shadow-big-color($brand-info);
                 }
             }
         }
@@ -48,6 +54,7 @@
                 &:focus,
                 &:hover{
                     background-color: $brand-success;
+                    @include shadow-big-color($brand-success);
                 }
             }
         }
@@ -60,6 +67,7 @@
                 &:focus,
                 &:hover{
                     background-color: $brand-warning;
+                    @include shadow-big-color($brand-warning);
                 }
             }
         }
@@ -72,8 +80,12 @@
                 &:focus,
                 &:hover{
                     background-color: $brand-danger;
+                    @include shadow-big-color($brand-danger);
                 }
             }
         }
     }
+}
+.tab-space{
+    padding: 20px 0 50px 0px;
 }

@@ -56,45 +56,6 @@ h2.title{
 }
 .features{
     padding: 80px 0 0;
-
-    .feature{
-        max-width: 360px;
-        margin: 0 auto;
-
-        > i{
-            font-size: 60px;
-        }
-        h4{
-            color: $black-color;
-            margin: $margin-base * 2 0 $margin-base;
-        }
-
-        &.feature-primary{
-            > i{
-                color: $brand-primary;
-            }
-        }
-        &.feature-info{
-            > i{
-                color: $brand-info;
-            }
-        }
-        &.feature-success{
-            > i{
-                color: $brand-success;
-            }
-        }
-        &.feature-warning{
-            > i{
-                color: $brand-warning;
-            }
-        }
-        &.feature-danger{
-            > i{
-                color: $brand-danger;
-            }
-        }
-    }
 }
 
 .team{
@@ -240,6 +201,16 @@ h2.title{
     }
 }
 
+@media (max-width: 991px){
+    .landing-page .header{
+        height: auto;
+        min-height: 100vh;
+
+        .container{
+            padding-bottom: 70px
+        }
+    }
+}
 @media (max-width: 768px){
     .footer{
         .copyright{

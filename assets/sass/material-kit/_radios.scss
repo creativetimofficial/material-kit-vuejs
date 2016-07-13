@@ -41,7 +41,7 @@
       width: 15px;
       border-radius: 100%;
       background-color: $mdb-radio-color-on;
-      transform: scale3d(0, 0, 0);
+      @include transform-scale3d(unquote('0,0,0'));
     }
     .check:after {
       display: block;
@@ -56,13 +56,13 @@
       z-index: 1;
       opacity: 0;
       margin: 0;
-      transform: scale3d(1.5, 1.5, 1);
+      @include transform-scale3d(unquote('1.5,1.5,1'));
     }
     input[type=radio]:not(:checked) ~ .check:after {
-      animation: rippleOff 500ms;
+        @include animation(rippleOff 500ms);
     }
     input[type=radio]:checked ~ .check:after {
-      animation: rippleOn 500ms;
+        @include animation(rippleOff 500ms);
     }
 
   }
@@ -77,7 +77,7 @@
       @include radio-color($mdb-radio-color-on, 1);
     }
     &:checked ~ .check {
-      transform: scale3d(0.65, 0.65, 1);
+      @include transform-scale3d(unquote('0.65, 0.65, 1'));
     }
   }
 

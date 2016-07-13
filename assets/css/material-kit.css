@@ -1,3 +1,34 @@
+/*! =========================================================
+ *
+ * Material Kit Free - V1.1.0
+ *
+ * =========================================================
+ *
+ *
+ *                       _oo0oo_
+ *                      o8888888o
+ *                      88" . "88
+ *                      (| -_- |)
+ *                      0\  =  /0
+ *                    ___/`---'\___
+ *                  .' \|     |// '.
+ *                 / \|||  :  |||// \
+ *                / _||||| -:- |||||- \
+ *               |   | \\  -  /// |   |
+ *               | \_|  ''\---/''  |_/ |
+ *               \  .-\__  '-'  ___/-. /
+ *             ___'. .'  /--.--\  `. .'___
+ *          ."" '<  `.___\_<|>_/___.' >' "".
+ *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *     =====`-.____`.___ \_____/___.-`___.-'=====
+ *                       `=---='
+ *
+ *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *               Buddha Bless:  "No Bugs"
+ *
+ * ========================================================= */
 /* ANIMATION */
 /* SHADOWS */
 /* Shadows (from mdl http://www.getmdl.io/) */
@@ -79,7 +110,7 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
 }
 
 .btn,
-.input-group-btn .btn {
+.navbar .navbar-nav > li > a.btn {
   border: none;
   border-radius: 3px;
   position: relative;
@@ -90,238 +121,550 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   text-transform: uppercase;
   letter-spacing: 0;
   will-change: box-shadow, transform;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  background: transparent;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn::-moz-focus-inner,
-.input-group-btn .btn::-moz-focus-inner {
+.navbar .navbar-nav > li > a.btn::-moz-focus-inner {
   border: 0;
 }
-.btn:not(.btn-raised),
-.input-group-btn .btn:not(.btn-raised) {
+.btn, .btn.btn-default,
+.navbar .navbar-nav > li > a.btn,
+.navbar .navbar-nav > li > a.btn.btn-default {
+  box-shadow: 0 2px 2px 0 rgba(153, 153, 153, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+}
+.btn, .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:active:focus, .btn:active:hover, .btn.active:focus, .btn.active:hover, .open > .btn.dropdown-toggle, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle:hover, .btn.btn-default, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active, .btn.btn-default:active:focus, .btn.btn-default:active:hover, .btn.btn-default.active:focus, .btn.btn-default.active:hover, .open > .btn.btn-default.dropdown-toggle, .open > .btn.btn-default.dropdown-toggle:focus, .open > .btn.btn-default.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn,
+.navbar .navbar-nav > li > a.btn:hover,
+.navbar .navbar-nav > li > a.btn:focus,
+.navbar .navbar-nav > li > a.btn:active,
+.navbar .navbar-nav > li > a.btn.active,
+.navbar .navbar-nav > li > a.btn:active:focus,
+.navbar .navbar-nav > li > a.btn:active:hover,
+.navbar .navbar-nav > li > a.btn.active:focus,
+.navbar .navbar-nav > li > a.btn.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-default,
+.navbar .navbar-nav > li > a.btn.btn-default:hover,
+.navbar .navbar-nav > li > a.btn.btn-default:focus,
+.navbar .navbar-nav > li > a.btn.btn-default:active,
+.navbar .navbar-nav > li > a.btn.btn-default.active,
+.navbar .navbar-nav > li > a.btn.btn-default:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-default:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-default.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-default.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:hover {
+  background-color: #999999;
+  color: #FFFFFF;
+}
+.btn:focus, .btn:active, .btn:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default:hover,
+.navbar .navbar-nav > li > a.btn:focus,
+.navbar .navbar-nav > li > a.btn:active,
+.navbar .navbar-nav > li > a.btn:hover,
+.navbar .navbar-nav > li > a.btn.btn-default:focus,
+.navbar .navbar-nav > li > a.btn.btn-default:active,
+.navbar .navbar-nav > li > a.btn.btn-default:hover {
+  box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+}
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active, .btn.btn-default.disabled, .btn.btn-default.disabled:hover, .btn.btn-default.disabled:focus, .btn.btn-default.disabled.focus, .btn.btn-default.disabled:active, .btn.btn-default.disabled.active, .btn.btn-default:disabled, .btn.btn-default:disabled:hover, .btn.btn-default:disabled:focus, .btn.btn-default:disabled.focus, .btn.btn-default:disabled:active, .btn.btn-default:disabled.active, .btn.btn-default[disabled], .btn.btn-default[disabled]:hover, .btn.btn-default[disabled]:focus, .btn.btn-default[disabled].focus, .btn.btn-default[disabled]:active, .btn.btn-default[disabled].active, fieldset[disabled] .btn.btn-default, fieldset[disabled] .btn.btn-default:hover, fieldset[disabled] .btn.btn-default:focus, fieldset[disabled] .btn.btn-default.focus, fieldset[disabled] .btn.btn-default:active, fieldset[disabled] .btn.btn-default.active,
+.navbar .navbar-nav > li > a.btn.disabled,
+.navbar .navbar-nav > li > a.btn.disabled:hover,
+.navbar .navbar-nav > li > a.btn.disabled:focus,
+.navbar .navbar-nav > li > a.btn.disabled.focus,
+.navbar .navbar-nav > li > a.btn.disabled:active,
+.navbar .navbar-nav > li > a.btn.disabled.active,
+.navbar .navbar-nav > li > a.btn:disabled,
+.navbar .navbar-nav > li > a.btn:disabled:hover,
+.navbar .navbar-nav > li > a.btn:disabled:focus,
+.navbar .navbar-nav > li > a.btn:disabled.focus,
+.navbar .navbar-nav > li > a.btn:disabled:active,
+.navbar .navbar-nav > li > a.btn:disabled.active,
+.navbar .navbar-nav > li > a.btn[disabled],
+.navbar .navbar-nav > li > a.btn[disabled]:hover,
+.navbar .navbar-nav > li > a.btn[disabled]:focus,
+.navbar .navbar-nav > li > a.btn[disabled].focus,
+.navbar .navbar-nav > li > a.btn[disabled]:active,
+.navbar .navbar-nav > li > a.btn[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.active,
+.navbar .navbar-nav > li > a.btn.btn-default.disabled,
+.navbar .navbar-nav > li > a.btn.btn-default.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-default.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-default.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-default.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-default.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-default:disabled,
+.navbar .navbar-nav > li > a.btn.btn-default:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-default:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-default:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-default:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-default:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-default[disabled],
+.navbar .navbar-nav > li > a.btn.btn-default[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-default[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-default[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-default[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-default[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-default, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-default:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-default:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-default.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-default:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-default.active {
   box-shadow: none;
 }
-.btn:not(.btn-raised), .btn:not(.btn-raised).btn-default,
-.input-group-btn .btn:not(.btn-raised),
-.input-group-btn .btn:not(.btn-raised).btn-default {
-  color: rgba(0,0,0, 0.87);
+.btn.btn-simple, .btn.btn-default.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-default.btn-simple {
+  background-color: transparent;
+  color: #999999;
+  box-shadow: none;
 }
-.btn:not(.btn-raised).btn-inverse,
-.input-group-btn .btn:not(.btn-raised).btn-inverse {
-  color: #3f51b5;
+.btn.btn-simple:hover, .btn.btn-simple:focus, .btn.btn-simple:active, .btn.btn-default.btn-simple:hover, .btn.btn-default.btn-simple:focus, .btn.btn-default.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-default.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-default.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-default.btn-simple:active {
+  background-color: transparent;
+  color: #999999;
 }
-.btn:not(.btn-raised).btn-primary,
-.input-group-btn .btn:not(.btn-raised).btn-primary {
+.btn.btn-primary,
+.navbar .navbar-nav > li > a.btn.btn-primary {
+  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+}
+.btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary.active, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .open > .btn.btn-primary.dropdown-toggle, .open > .btn.btn-primary.dropdown-toggle:focus, .open > .btn.btn-primary.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary,
+.navbar .navbar-nav > li > a.btn.btn-primary:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary:active,
+.navbar .navbar-nav > li > a.btn.btn-primary.active,
+.navbar .navbar-nav > li > a.btn.btn-primary:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
+  background-color: #9c27b0;
+  color: #FFFFFF;
+}
+.btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary:active,
+.navbar .navbar-nav > li > a.btn.btn-primary:hover {
+  box-shadow: 0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+}
+.btn.btn-primary.disabled, .btn.btn-primary.disabled:hover, .btn.btn-primary.disabled:focus, .btn.btn-primary.disabled.focus, .btn.btn-primary.disabled:active, .btn.btn-primary.disabled.active, .btn.btn-primary:disabled, .btn.btn-primary:disabled:hover, .btn.btn-primary:disabled:focus, .btn.btn-primary:disabled.focus, .btn.btn-primary:disabled:active, .btn.btn-primary:disabled.active, .btn.btn-primary[disabled], .btn.btn-primary[disabled]:hover, .btn.btn-primary[disabled]:focus, .btn.btn-primary[disabled].focus, .btn.btn-primary[disabled]:active, .btn.btn-primary[disabled].active, fieldset[disabled] .btn.btn-primary, fieldset[disabled] .btn.btn-primary:hover, fieldset[disabled] .btn.btn-primary:focus, fieldset[disabled] .btn.btn-primary.focus, fieldset[disabled] .btn.btn-primary:active, fieldset[disabled] .btn.btn-primary.active,
+.navbar .navbar-nav > li > a.btn.btn-primary.disabled,
+.navbar .navbar-nav > li > a.btn.btn-primary.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-primary.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-primary.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-primary:disabled,
+.navbar .navbar-nav > li > a.btn.btn-primary:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-primary:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-primary:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-primary[disabled],
+.navbar .navbar-nav > li > a.btn.btn-primary[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-primary[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-primary[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-primary, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-primary:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-primary:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-primary.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-primary:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-primary.active {
+  box-shadow: none;
+}
+.btn.btn-primary.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-primary.btn-simple {
+  background-color: transparent;
+  color: #9c27b0;
+  box-shadow: none;
+}
+.btn.btn-primary.btn-simple:hover, .btn.btn-primary.btn-simple:focus, .btn.btn-primary.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-primary.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary.btn-simple:active {
+  background-color: transparent;
   color: #9c27b0;
 }
-.btn:not(.btn-raised).btn-success,
-.input-group-btn .btn:not(.btn-raised).btn-success {
-  color: #4caf50;
+.btn.btn-info,
+.navbar .navbar-nav > li > a.btn.btn-info {
+  box-shadow: 0 2px 2px 0 rgba(3, 169, 244, 0.14), 0 3px 1px -2px rgba(3, 169, 244, 0.2), 0 1px 5px 0 rgba(3, 169, 244, 0.12);
 }
-.btn:not(.btn-raised).btn-info,
-.input-group-btn .btn:not(.btn-raised).btn-info {
+.btn.btn-info, .btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active, .btn.btn-info.active, .btn.btn-info:active:focus, .btn.btn-info:active:hover, .btn.btn-info.active:focus, .btn.btn-info.active:hover, .open > .btn.btn-info.dropdown-toggle, .open > .btn.btn-info.dropdown-toggle:focus, .open > .btn.btn-info.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-info,
+.navbar .navbar-nav > li > a.btn.btn-info:hover,
+.navbar .navbar-nav > li > a.btn.btn-info:focus,
+.navbar .navbar-nav > li > a.btn.btn-info:active,
+.navbar .navbar-nav > li > a.btn.btn-info.active,
+.navbar .navbar-nav > li > a.btn.btn-info:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-info:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-info.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-info.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle:hover {
+  background-color: #03a9f4;
+  color: #FFFFFF;
+}
+.btn.btn-info:focus, .btn.btn-info:active, .btn.btn-info:hover,
+.navbar .navbar-nav > li > a.btn.btn-info:focus,
+.navbar .navbar-nav > li > a.btn.btn-info:active,
+.navbar .navbar-nav > li > a.btn.btn-info:hover {
+  box-shadow: 0 14px 26px -12px rgba(3, 169, 244, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(3, 169, 244, 0.2);
+}
+.btn.btn-info.disabled, .btn.btn-info.disabled:hover, .btn.btn-info.disabled:focus, .btn.btn-info.disabled.focus, .btn.btn-info.disabled:active, .btn.btn-info.disabled.active, .btn.btn-info:disabled, .btn.btn-info:disabled:hover, .btn.btn-info:disabled:focus, .btn.btn-info:disabled.focus, .btn.btn-info:disabled:active, .btn.btn-info:disabled.active, .btn.btn-info[disabled], .btn.btn-info[disabled]:hover, .btn.btn-info[disabled]:focus, .btn.btn-info[disabled].focus, .btn.btn-info[disabled]:active, .btn.btn-info[disabled].active, fieldset[disabled] .btn.btn-info, fieldset[disabled] .btn.btn-info:hover, fieldset[disabled] .btn.btn-info:focus, fieldset[disabled] .btn.btn-info.focus, fieldset[disabled] .btn.btn-info:active, fieldset[disabled] .btn.btn-info.active,
+.navbar .navbar-nav > li > a.btn.btn-info.disabled,
+.navbar .navbar-nav > li > a.btn.btn-info.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-info.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-info.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-info.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-info.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-info:disabled,
+.navbar .navbar-nav > li > a.btn.btn-info:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-info:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-info:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-info:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-info:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-info[disabled],
+.navbar .navbar-nav > li > a.btn.btn-info[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-info[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-info[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-info[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-info[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-info, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-info:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-info:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-info.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-info:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-info.active {
+  box-shadow: none;
+}
+.btn.btn-info.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-info.btn-simple {
+  background-color: transparent;
+  color: #03a9f4;
+  box-shadow: none;
+}
+.btn.btn-info.btn-simple:hover, .btn.btn-info.btn-simple:focus, .btn.btn-info.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-info.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-info.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-info.btn-simple:active {
+  background-color: transparent;
   color: #03a9f4;
 }
-.btn:not(.btn-raised).btn-warning,
-.input-group-btn .btn:not(.btn-raised).btn-warning {
+.btn.btn-success,
+.navbar .navbar-nav > li > a.btn.btn-success {
+  box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
+}
+.btn.btn-success, .btn.btn-success:hover, .btn.btn-success:focus, .btn.btn-success:active, .btn.btn-success.active, .btn.btn-success:active:focus, .btn.btn-success:active:hover, .btn.btn-success.active:focus, .btn.btn-success.active:hover, .open > .btn.btn-success.dropdown-toggle, .open > .btn.btn-success.dropdown-toggle:focus, .open > .btn.btn-success.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-success,
+.navbar .navbar-nav > li > a.btn.btn-success:hover,
+.navbar .navbar-nav > li > a.btn.btn-success:focus,
+.navbar .navbar-nav > li > a.btn.btn-success:active,
+.navbar .navbar-nav > li > a.btn.btn-success.active,
+.navbar .navbar-nav > li > a.btn.btn-success:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-success:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-success.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-success.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-success.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-success.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-success.dropdown-toggle:hover {
+  background-color: #4caf50;
+  color: #FFFFFF;
+}
+.btn.btn-success:focus, .btn.btn-success:active, .btn.btn-success:hover,
+.navbar .navbar-nav > li > a.btn.btn-success:focus,
+.navbar .navbar-nav > li > a.btn.btn-success:active,
+.navbar .navbar-nav > li > a.btn.btn-success:hover {
+  box-shadow: 0 14px 26px -12px rgba(76, 175, 80, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
+}
+.btn.btn-success.disabled, .btn.btn-success.disabled:hover, .btn.btn-success.disabled:focus, .btn.btn-success.disabled.focus, .btn.btn-success.disabled:active, .btn.btn-success.disabled.active, .btn.btn-success:disabled, .btn.btn-success:disabled:hover, .btn.btn-success:disabled:focus, .btn.btn-success:disabled.focus, .btn.btn-success:disabled:active, .btn.btn-success:disabled.active, .btn.btn-success[disabled], .btn.btn-success[disabled]:hover, .btn.btn-success[disabled]:focus, .btn.btn-success[disabled].focus, .btn.btn-success[disabled]:active, .btn.btn-success[disabled].active, fieldset[disabled] .btn.btn-success, fieldset[disabled] .btn.btn-success:hover, fieldset[disabled] .btn.btn-success:focus, fieldset[disabled] .btn.btn-success.focus, fieldset[disabled] .btn.btn-success:active, fieldset[disabled] .btn.btn-success.active,
+.navbar .navbar-nav > li > a.btn.btn-success.disabled,
+.navbar .navbar-nav > li > a.btn.btn-success.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-success.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-success.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-success.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-success.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-success:disabled,
+.navbar .navbar-nav > li > a.btn.btn-success:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-success:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-success:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-success:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-success:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-success[disabled],
+.navbar .navbar-nav > li > a.btn.btn-success[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-success[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-success[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-success[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-success[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-success, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-success:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-success:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-success.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-success:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-success.active {
+  box-shadow: none;
+}
+.btn.btn-success.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-success.btn-simple {
+  background-color: transparent;
+  color: #4caf50;
+  box-shadow: none;
+}
+.btn.btn-success.btn-simple:hover, .btn.btn-success.btn-simple:focus, .btn.btn-success.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-success.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-success.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-success.btn-simple:active {
+  background-color: transparent;
+  color: #4caf50;
+}
+.btn.btn-warning,
+.navbar .navbar-nav > li > a.btn.btn-warning {
+  box-shadow: 0 2px 2px 0 rgba(251, 192, 45, 0.14), 0 3px 1px -2px rgba(251, 192, 45, 0.2), 0 1px 5px 0 rgba(251, 192, 45, 0.12);
+}
+.btn.btn-warning, .btn.btn-warning:hover, .btn.btn-warning:focus, .btn.btn-warning:active, .btn.btn-warning.active, .btn.btn-warning:active:focus, .btn.btn-warning:active:hover, .btn.btn-warning.active:focus, .btn.btn-warning.active:hover, .open > .btn.btn-warning.dropdown-toggle, .open > .btn.btn-warning.dropdown-toggle:focus, .open > .btn.btn-warning.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning,
+.navbar .navbar-nav > li > a.btn.btn-warning:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning:active,
+.navbar .navbar-nav > li > a.btn.btn-warning.active,
+.navbar .navbar-nav > li > a.btn.btn-warning:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-warning.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-warning.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-warning.dropdown-toggle:hover {
+  background-color: #fbc02d;
+  color: #FFFFFF;
+}
+.btn.btn-warning:focus, .btn.btn-warning:active, .btn.btn-warning:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning:active,
+.navbar .navbar-nav > li > a.btn.btn-warning:hover {
+  box-shadow: 0 14px 26px -12px rgba(251, 192, 45, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(251, 192, 45, 0.2);
+}
+.btn.btn-warning.disabled, .btn.btn-warning.disabled:hover, .btn.btn-warning.disabled:focus, .btn.btn-warning.disabled.focus, .btn.btn-warning.disabled:active, .btn.btn-warning.disabled.active, .btn.btn-warning:disabled, .btn.btn-warning:disabled:hover, .btn.btn-warning:disabled:focus, .btn.btn-warning:disabled.focus, .btn.btn-warning:disabled:active, .btn.btn-warning:disabled.active, .btn.btn-warning[disabled], .btn.btn-warning[disabled]:hover, .btn.btn-warning[disabled]:focus, .btn.btn-warning[disabled].focus, .btn.btn-warning[disabled]:active, .btn.btn-warning[disabled].active, fieldset[disabled] .btn.btn-warning, fieldset[disabled] .btn.btn-warning:hover, fieldset[disabled] .btn.btn-warning:focus, fieldset[disabled] .btn.btn-warning.focus, fieldset[disabled] .btn.btn-warning:active, fieldset[disabled] .btn.btn-warning.active,
+.navbar .navbar-nav > li > a.btn.btn-warning.disabled,
+.navbar .navbar-nav > li > a.btn.btn-warning.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-warning.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-warning.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-warning:disabled,
+.navbar .navbar-nav > li > a.btn.btn-warning:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-warning:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-warning:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-warning[disabled],
+.navbar .navbar-nav > li > a.btn.btn-warning[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-warning[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-warning[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-warning, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-warning:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-warning:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-warning.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-warning:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-warning.active {
+  box-shadow: none;
+}
+.btn.btn-warning.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-warning.btn-simple {
+  background-color: transparent;
+  color: #fbc02d;
+  box-shadow: none;
+}
+.btn.btn-warning.btn-simple:hover, .btn.btn-warning.btn-simple:focus, .btn.btn-warning.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-warning.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-warning.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-warning.btn-simple:active {
+  background-color: transparent;
   color: #fbc02d;
 }
-.btn:not(.btn-raised).btn-danger,
-.input-group-btn .btn:not(.btn-raised).btn-danger {
+.btn.btn-danger,
+.navbar .navbar-nav > li > a.btn.btn-danger {
+  box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
+}
+.btn.btn-danger, .btn.btn-danger:hover, .btn.btn-danger:focus, .btn.btn-danger:active, .btn.btn-danger.active, .btn.btn-danger:active:focus, .btn.btn-danger:active:hover, .btn.btn-danger.active:focus, .btn.btn-danger.active:hover, .open > .btn.btn-danger.dropdown-toggle, .open > .btn.btn-danger.dropdown-toggle:focus, .open > .btn.btn-danger.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger,
+.navbar .navbar-nav > li > a.btn.btn-danger:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger:active,
+.navbar .navbar-nav > li > a.btn.btn-danger.active,
+.navbar .navbar-nav > li > a.btn.btn-danger:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-danger.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-danger.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-danger.dropdown-toggle:hover {
+  background-color: #f44336;
+  color: #FFFFFF;
+}
+.btn.btn-danger:focus, .btn.btn-danger:active, .btn.btn-danger:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger:active,
+.navbar .navbar-nav > li > a.btn.btn-danger:hover {
+  box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+}
+.btn.btn-danger.disabled, .btn.btn-danger.disabled:hover, .btn.btn-danger.disabled:focus, .btn.btn-danger.disabled.focus, .btn.btn-danger.disabled:active, .btn.btn-danger.disabled.active, .btn.btn-danger:disabled, .btn.btn-danger:disabled:hover, .btn.btn-danger:disabled:focus, .btn.btn-danger:disabled.focus, .btn.btn-danger:disabled:active, .btn.btn-danger:disabled.active, .btn.btn-danger[disabled], .btn.btn-danger[disabled]:hover, .btn.btn-danger[disabled]:focus, .btn.btn-danger[disabled].focus, .btn.btn-danger[disabled]:active, .btn.btn-danger[disabled].active, fieldset[disabled] .btn.btn-danger, fieldset[disabled] .btn.btn-danger:hover, fieldset[disabled] .btn.btn-danger:focus, fieldset[disabled] .btn.btn-danger.focus, fieldset[disabled] .btn.btn-danger:active, fieldset[disabled] .btn.btn-danger.active,
+.navbar .navbar-nav > li > a.btn.btn-danger.disabled,
+.navbar .navbar-nav > li > a.btn.btn-danger.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-danger.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-danger.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-danger:disabled,
+.navbar .navbar-nav > li > a.btn.btn-danger:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-danger:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-danger:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-danger[disabled],
+.navbar .navbar-nav > li > a.btn.btn-danger[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-danger[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-danger[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-danger, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-danger:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-danger:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-danger.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-danger:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-danger.active {
+  box-shadow: none;
+}
+.btn.btn-danger.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-danger.btn-simple {
+  background-color: transparent;
+  color: #f44336;
+  box-shadow: none;
+}
+.btn.btn-danger.btn-simple:hover, .btn.btn-danger.btn-simple:focus, .btn.btn-danger.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-danger.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-danger.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-danger.btn-simple:active {
+  background-color: transparent;
   color: #f44336;
 }
-.btn:not(.btn-raised):not(.btn-link):hover, .btn:not(.btn-raised):not(.btn-link):focus,
-.input-group-btn .btn:not(.btn-raised):not(.btn-link):hover,
-.input-group-btn .btn:not(.btn-raised):not(.btn-link):focus {
+.btn.btn-upgrade,
+.navbar .navbar-nav > li > a.btn.btn-upgrade {
+  box-shadow: 0 2px 2px 0 rgba(233, 30, 99, 0.14), 0 3px 1px -2px rgba(233, 30, 99, 0.2), 0 1px 5px 0 rgba(233, 30, 99, 0.12);
+}
+.btn.btn-upgrade, .btn.btn-upgrade:hover, .btn.btn-upgrade:focus, .btn.btn-upgrade:active, .btn.btn-upgrade.active, .btn.btn-upgrade:active:focus, .btn.btn-upgrade:active:hover, .btn.btn-upgrade.active:focus, .btn.btn-upgrade.active:hover, .open > .btn.btn-upgrade.dropdown-toggle, .open > .btn.btn-upgrade.dropdown-toggle:focus, .open > .btn.btn-upgrade.dropdown-toggle:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:active:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:active:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.active:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-upgrade.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-upgrade.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-upgrade.dropdown-toggle:hover {
+  background-color: #e91e63;
+  color: #FFFFFF;
+}
+.btn.btn-upgrade:focus, .btn.btn-upgrade:active, .btn.btn-upgrade:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:hover {
+  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
+}
+.btn.btn-upgrade.disabled, .btn.btn-upgrade.disabled:hover, .btn.btn-upgrade.disabled:focus, .btn.btn-upgrade.disabled.focus, .btn.btn-upgrade.disabled:active, .btn.btn-upgrade.disabled.active, .btn.btn-upgrade:disabled, .btn.btn-upgrade:disabled:hover, .btn.btn-upgrade:disabled:focus, .btn.btn-upgrade:disabled.focus, .btn.btn-upgrade:disabled:active, .btn.btn-upgrade:disabled.active, .btn.btn-upgrade[disabled], .btn.btn-upgrade[disabled]:hover, .btn.btn-upgrade[disabled]:focus, .btn.btn-upgrade[disabled].focus, .btn.btn-upgrade[disabled]:active, .btn.btn-upgrade[disabled].active, fieldset[disabled] .btn.btn-upgrade, fieldset[disabled] .btn.btn-upgrade:hover, fieldset[disabled] .btn.btn-upgrade:focus, fieldset[disabled] .btn.btn-upgrade.focus, fieldset[disabled] .btn.btn-upgrade:active, fieldset[disabled] .btn.btn-upgrade.active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled.focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled:active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade:disabled.active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled],
+.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled]:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled]:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled].focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled]:active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade[disabled].active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-upgrade, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-upgrade:hover, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-upgrade:focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-upgrade.focus, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-upgrade:active, fieldset[disabled]
+.navbar .navbar-nav > li > a.btn.btn-upgrade.active {
+  box-shadow: none;
+}
+.btn.btn-upgrade.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple {
   background-color: transparent;
+  color: #e91e63;
+  box-shadow: none;
+}
+.btn.btn-upgrade.btn-simple:hover, .btn.btn-upgrade.btn-simple:focus, .btn.btn-upgrade.btn-simple:active,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple:hover,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple:focus,
+.navbar .navbar-nav > li > a.btn.btn-upgrade.btn-simple:active {
+  background-color: transparent;
+  color: #e91e63;
+}
+.btn.btn-white, .btn.btn-white:focus, .btn.btn-white:hover,
+.navbar .navbar-nav > li > a.btn.btn-white,
+.navbar .navbar-nav > li > a.btn.btn-white:focus,
+.navbar .navbar-nav > li > a.btn.btn-white:hover {
+  background-color: #FFFFFF;
+  color: #999999;
+}
+.btn.btn-white.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-white.btn-simple {
+  color: #FFFFFF;
+  background: transparent;
+  box-shadow: none;
 }
 .btn:focus, .btn:active, .btn:active:focus,
-.input-group-btn .btn:focus,
-.input-group-btn .btn:active,
-.input-group-btn .btn:active:focus {
+.navbar .navbar-nav > li > a.btn:focus,
+.navbar .navbar-nav > li > a.btn:active,
+.navbar .navbar-nav > li > a.btn:active:focus {
   outline: 0;
-}
-.btn.btn-raised, .btn.btn-raised.btn-default, .btn.btn-fab, .btn.btn-fab.btn-default, .btn-group-raised .btn, .btn-group-raised .btn.btn-default,
-.input-group-btn .btn.btn-raised,
-.input-group-btn .btn.btn-raised.btn-default,
-.input-group-btn .btn.btn-fab,
-.input-group-btn .btn.btn-fab.btn-default, .btn-group-raised
-.input-group-btn .btn, .btn-group-raised
-.input-group-btn .btn.btn-default {
-  background-color: #EEEEEE;
-  color: rgba(0,0,0, 0.87);
-}
-.btn.btn-raised.btn-inverse, .btn.btn-fab.btn-inverse, .btn-group-raised .btn.btn-inverse,
-.input-group-btn .btn.btn-raised.btn-inverse,
-.input-group-btn .btn.btn-fab.btn-inverse, .btn-group-raised
-.input-group-btn .btn.btn-inverse {
-  background-color: #3f51b5;
-  color: contrast-color(#3f51b5, #000000, #ffffff);
-}
-.btn.btn-raised.btn-primary, .btn.btn-fab.btn-primary, .btn-group-raised .btn.btn-primary,
-.input-group-btn .btn.btn-raised.btn-primary,
-.input-group-btn .btn.btn-fab.btn-primary, .btn-group-raised
-.input-group-btn .btn.btn-primary {
-  background-color: #9c27b0;
-  color: #ffffff;
-}
-.btn.btn-raised.btn-success, .btn.btn-fab.btn-success, .btn-group-raised .btn.btn-success,
-.input-group-btn .btn.btn-raised.btn-success,
-.input-group-btn .btn.btn-fab.btn-success, .btn-group-raised
-.input-group-btn .btn.btn-success {
-  background-color: #4caf50;
-  color: #ffffff;
-}
-.btn.btn-raised.btn-info, .btn.btn-fab.btn-info, .btn-group-raised .btn.btn-info,
-.input-group-btn .btn.btn-raised.btn-info,
-.input-group-btn .btn.btn-fab.btn-info, .btn-group-raised
-.input-group-btn .btn.btn-info {
-  background-color: #03a9f4;
-  color: #ffffff;
-}
-.btn.btn-raised.btn-warning, .btn.btn-fab.btn-warning, .btn-group-raised .btn.btn-warning,
-.input-group-btn .btn.btn-raised.btn-warning,
-.input-group-btn .btn.btn-fab.btn-warning, .btn-group-raised
-.input-group-btn .btn.btn-warning {
-  background-color: #fbc02d;
-  color: #ffffff;
-}
-.btn.btn-raised.btn-danger, .btn.btn-fab.btn-danger, .btn-group-raised .btn.btn-danger,
-.input-group-btn .btn.btn-raised.btn-danger,
-.input-group-btn .btn.btn-fab.btn-danger, .btn-group-raised
-.input-group-btn .btn.btn-danger {
-  background-color: #f44336;
-  color: #ffffff;
-}
-.btn.btn-raised:not(.btn-link), .btn-group-raised .btn:not(.btn-link),
-.input-group-btn .btn.btn-raised:not(.btn-link), .btn-group-raised
-.input-group-btn .btn:not(.btn-link) {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-}
-.btn.btn-raised:not(.btn-link):hover, .btn.btn-raised:not(.btn-link):focus, .btn.btn-raised:not(.btn-link).active, .btn.btn-raised:not(.btn-link):active, .btn-group-raised .btn:not(.btn-link):hover, .btn-group-raised .btn:not(.btn-link):focus, .btn-group-raised .btn:not(.btn-link).active, .btn-group-raised .btn:not(.btn-link):active,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus,
-.input-group-btn .btn.btn-raised:not(.btn-link).active,
-.input-group-btn .btn.btn-raised:not(.btn-link):active, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active {
-  outline: 0;
-}
-.btn.btn-raised:not(.btn-link):hover, .btn.btn-raised:not(.btn-link):hover.btn-default, .btn.btn-raised:not(.btn-link):focus, .btn.btn-raised:not(.btn-link):focus.btn-default, .btn.btn-raised:not(.btn-link).active, .btn.btn-raised:not(.btn-link).active.btn-default, .btn.btn-raised:not(.btn-link):active, .btn.btn-raised:not(.btn-link):active.btn-default, .btn-group-raised .btn:not(.btn-link):hover, .btn-group-raised .btn:not(.btn-link):hover.btn-default, .btn-group-raised .btn:not(.btn-link):focus, .btn-group-raised .btn:not(.btn-link):focus.btn-default, .btn-group-raised .btn:not(.btn-link).active, .btn-group-raised .btn:not(.btn-link).active.btn-default, .btn-group-raised .btn:not(.btn-link):active, .btn-group-raised .btn:not(.btn-link):active.btn-default,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-default,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-default,
-.input-group-btn .btn.btn-raised:not(.btn-link).active,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-default,
-.input-group-btn .btn.btn-raised:not(.btn-link):active,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-default, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-default, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-default, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-default, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-default {
-  background-color: contrast-color(#EEEEEE, #e4e4e4, #f8f8f8);
-}
-.btn.btn-raised:not(.btn-link):hover.btn-inverse, .btn.btn-raised:not(.btn-link):focus.btn-inverse, .btn.btn-raised:not(.btn-link).active.btn-inverse, .btn.btn-raised:not(.btn-link):active.btn-inverse, .btn-group-raised .btn:not(.btn-link):hover.btn-inverse, .btn-group-raised .btn:not(.btn-link):focus.btn-inverse, .btn-group-raised .btn:not(.btn-link).active.btn-inverse, .btn-group-raised .btn:not(.btn-link):active.btn-inverse,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-inverse,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-inverse,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-inverse,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-inverse, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-inverse, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-inverse, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-inverse, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-inverse {
-  background-color: contrast-color(#3f51b5, #3a4aa6, #495bc0);
-}
-.btn.btn-raised:not(.btn-link):hover.btn-primary, .btn.btn-raised:not(.btn-link):focus.btn-primary, .btn.btn-raised:not(.btn-link).active.btn-primary, .btn.btn-raised:not(.btn-link):active.btn-primary, .btn-group-raised .btn:not(.btn-link):hover.btn-primary, .btn-group-raised .btn:not(.btn-link):focus.btn-primary, .btn-group-raised .btn:not(.btn-link).active.btn-primary, .btn-group-raised .btn:not(.btn-link):active.btn-primary,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-primary,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-primary,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-primary,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-primary, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-primary, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-primary, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-primary, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-primary {
-  background-color: contrast-color(#9c27b0, #8d239f, #ab2bc1);
-}
-.btn.btn-raised:not(.btn-link):hover.btn-success, .btn.btn-raised:not(.btn-link):focus.btn-success, .btn.btn-raised:not(.btn-link).active.btn-success, .btn.btn-raised:not(.btn-link):active.btn-success, .btn-group-raised .btn:not(.btn-link):hover.btn-success, .btn-group-raised .btn:not(.btn-link):focus.btn-success, .btn-group-raised .btn:not(.btn-link).active.btn-success, .btn-group-raised .btn:not(.btn-link):active.btn-success,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-success,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-success,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-success,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-success, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-success, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-success, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-success, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-success {
-  background-color: contrast-color(#4caf50, #46a149, #59b75c);
-}
-.btn.btn-raised:not(.btn-link):hover.btn-info, .btn.btn-raised:not(.btn-link):focus.btn-info, .btn.btn-raised:not(.btn-link).active.btn-info, .btn.btn-raised:not(.btn-link):active.btn-info, .btn-group-raised .btn:not(.btn-link):hover.btn-info, .btn-group-raised .btn:not(.btn-link):focus.btn-info, .btn-group-raised .btn:not(.btn-link).active.btn-info, .btn-group-raised .btn:not(.btn-link):active.btn-info,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-info,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-info,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-info,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-info, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-info, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-info, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-info, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-info {
-  background-color: contrast-color(#03a9f4, #039be0, #0fb2fc);
-}
-.btn.btn-raised:not(.btn-link):hover.btn-warning, .btn.btn-raised:not(.btn-link):focus.btn-warning, .btn.btn-raised:not(.btn-link).active.btn-warning, .btn.btn-raised:not(.btn-link):active.btn-warning, .btn-group-raised .btn:not(.btn-link):hover.btn-warning, .btn-group-raised .btn:not(.btn-link):focus.btn-warning, .btn-group-raised .btn:not(.btn-link).active.btn-warning, .btn-group-raised .btn:not(.btn-link):active.btn-warning,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-warning,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-warning,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-warning,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-warning, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-warning, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-warning, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-warning, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-warning {
-  background-color: contrast-color(#fbc02d, #fbba19, #fbc641);
-}
-.btn.btn-raised:not(.btn-link):hover.btn-danger, .btn.btn-raised:not(.btn-link):focus.btn-danger, .btn.btn-raised:not(.btn-link).active.btn-danger, .btn.btn-raised:not(.btn-link):active.btn-danger, .btn-group-raised .btn:not(.btn-link):hover.btn-danger, .btn-group-raised .btn:not(.btn-link):focus.btn-danger, .btn-group-raised .btn:not(.btn-link).active.btn-danger, .btn-group-raised .btn:not(.btn-link):active.btn-danger,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-danger,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus.btn-danger,
-.input-group-btn .btn.btn-raised:not(.btn-link).active.btn-danger,
-.input-group-btn .btn.btn-raised:not(.btn-link):active.btn-danger, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.btn-danger, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):focus.btn-danger, .btn-group-raised
-.input-group-btn .btn:not(.btn-link).active.btn-danger, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):active.btn-danger {
-  background-color: contrast-color(#f44336, #f33123, #f55549);
-}
-.btn.btn-raised:not(.btn-link):hover, .btn.btn-raised:not(.btn-link):hover:focus, .btn.btn-raised:not(.btn-link):hover.active, .btn.btn-raised:not(.btn-link):hover.active:focus, .btn.btn-raised:not(.btn-link):hover:active, .btn.btn-raised:not(.btn-link):hover:active:focus, .btn-group-raised .btn:not(.btn-link):hover, .btn-group-raised .btn:not(.btn-link):hover:focus, .btn-group-raised .btn:not(.btn-link):hover.active, .btn-group-raised .btn:not(.btn-link):hover.active:focus, .btn-group-raised .btn:not(.btn-link):hover:active, .btn-group-raised .btn:not(.btn-link):hover:active:focus,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover:focus,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.active,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover.active:focus,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover:active,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover:active:focus, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover:focus, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.active, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover.active:focus, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover:active, .btn-group-raised
-.input-group-btn .btn:not(.btn-link):hover:active:focus {
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
 .btn.btn-round,
-.input-group-btn .btn.btn-round {
+.navbar .navbar-nav > li > a.btn.btn-round {
   border-radius: 30px;
 }
-.btn i.material-icons,
-.input-group-btn .btn i.material-icons {
-  vertical-align: middle;
-  font-size: 17px;
-  top: -1px;
+.btn:not(.btn-just-icon):not(.btn-fab) .fa,
+.navbar .navbar-nav > li > a.btn:not(.btn-just-icon):not(.btn-fab) .fa {
+  font-size: 18px;
+  margin-top: -2px;
   position: relative;
+  top: 2px;
 }
 .btn.btn-fab,
-.input-group-btn .btn.btn-fab {
+.navbar .navbar-nav > li > a.btn.btn-fab {
   border-radius: 50%;
   font-size: 24px;
   height: 56px;
@@ -330,34 +673,33 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   width: 56px;
   padding: 0;
   overflow: hidden;
-  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
   position: relative;
   line-height: normal;
 }
 .btn.btn-fab .ripple-container,
-.input-group-btn .btn.btn-fab .ripple-container {
+.navbar .navbar-nav > li > a.btn.btn-fab .ripple-container {
   border-radius: 50%;
 }
 .btn.btn-fab.btn-fab-mini, .btn-group-sm .btn.btn-fab,
-.input-group-btn .btn.btn-fab.btn-fab-mini, .btn-group-sm
-.input-group-btn .btn.btn-fab {
+.navbar .navbar-nav > li > a.btn.btn-fab.btn-fab-mini, .btn-group-sm
+.navbar .navbar-nav > li > a.btn.btn-fab {
   height: 40px;
   min-width: 40px;
   width: 40px;
 }
 .btn.btn-fab.btn-fab-mini.material-icons, .btn-group-sm .btn.btn-fab.material-icons,
-.input-group-btn .btn.btn-fab.btn-fab-mini.material-icons, .btn-group-sm
-.input-group-btn .btn.btn-fab.material-icons {
+.navbar .navbar-nav > li > a.btn.btn-fab.btn-fab-mini.material-icons, .btn-group-sm
+.navbar .navbar-nav > li > a.btn.btn-fab.material-icons {
   top: -3.5px;
   left: -3.5px;
 }
 .btn.btn-fab.btn-fab-mini .material-icons, .btn-group-sm .btn.btn-fab .material-icons,
-.input-group-btn .btn.btn-fab.btn-fab-mini .material-icons, .btn-group-sm
-.input-group-btn .btn.btn-fab .material-icons {
+.navbar .navbar-nav > li > a.btn.btn-fab.btn-fab-mini .material-icons, .btn-group-sm
+.navbar .navbar-nav > li > a.btn.btn-fab .material-icons {
   font-size: 17px;
 }
 .btn.btn-fab i.material-icons,
-.input-group-btn .btn.btn-fab i.material-icons {
+.navbar .navbar-nav > li > a.btn.btn-fab i.material-icons {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -367,158 +709,65 @@ a .material-icons, a:hover .material-icons, a:focus .material-icons {
   font-size: 24px;
 }
 .btn.btn-lg, .btn-group-lg .btn,
-.input-group-btn .btn.btn-lg, .btn-group-lg
-.input-group-btn .btn {
+.navbar .navbar-nav > li > a.btn.btn-lg, .btn-group-lg
+.navbar .navbar-nav > li > a.btn {
   font-size: 14px;
   padding: 18px 36px;
 }
 .btn.btn-sm, .btn-group-sm .btn,
-.input-group-btn .btn.btn-sm, .btn-group-sm
-.input-group-btn .btn {
+.navbar .navbar-nav > li > a.btn.btn-sm, .btn-group-sm
+.navbar .navbar-nav > li > a.btn {
   padding: 5px 20px;
   font-size: 11px;
 }
 .btn.btn-xs, .btn-group-xs .btn,
-.input-group-btn .btn.btn-xs, .btn-group-xs
-.input-group-btn .btn {
+.navbar .navbar-nav > li > a.btn.btn-xs, .btn-group-xs
+.navbar .navbar-nav > li > a.btn {
   padding: 4px 15px;
   font-size: 10px;
 }
-
-.btn-just-icon {
-  font-size: 20px;
-  padding: 6px 11px;
+.btn.btn-just-icon,
+.navbar .navbar-nav > li > a.btn.btn-just-icon {
+  font-size: 18px;
+  padding: 10px 10px;
+  line-height: 1em;
+}
+.btn.btn-just-icon i,
+.navbar .navbar-nav > li > a.btn.btn-just-icon i {
+  width: 20px;
+}
+.btn.btn-just-icon.btn-lg,
+.navbar .navbar-nav > li > a.btn.btn-just-icon.btn-lg {
+  font-size: 22px;
+  padding: 13px 18px;
 }
 
-fieldset[disabled][disabled] .btn, .btn.disabled, .btn:disabled, .btn[disabled][disabled], fieldset[disabled][disabled]
-.input-group-btn .btn,
-.input-group-btn .btn.disabled,
-.input-group-btn .btn:disabled,
-.input-group-btn .btn[disabled][disabled], fieldset[disabled][disabled]
-.btn-group,
-.btn-group.disabled,
-.btn-group:disabled,
-.btn-group[disabled][disabled], fieldset[disabled][disabled]
-.btn-group-vertical,
-.btn-group-vertical.disabled,
-.btn-group-vertical:disabled,
-.btn-group-vertical[disabled][disabled] {
-  color: rgba(0, 0, 0, 0.26);
-  background: transparent;
+.btn .material-icons {
+  vertical-align: middle;
+  font-size: 17px;
+  top: -1px;
+  position: relative;
 }
-.theme-dark fieldset[disabled][disabled] .btn, .theme-dark .btn.disabled, .theme-dark .btn:disabled, .theme-dark .btn[disabled][disabled], .theme-dark fieldset[disabled][disabled]
-.input-group-btn .btn, .theme-dark
-.input-group-btn .btn.disabled, .theme-dark
-.input-group-btn .btn:disabled, .theme-dark
-.input-group-btn .btn[disabled][disabled], .theme-dark fieldset[disabled][disabled]
-.btn-group, .theme-dark
-.btn-group.disabled, .theme-dark
-.btn-group:disabled, .theme-dark
-.btn-group[disabled][disabled], .theme-dark fieldset[disabled][disabled]
-.btn-group-vertical, .theme-dark
-.btn-group-vertical.disabled, .theme-dark
-.btn-group-vertical:disabled, .theme-dark
-.btn-group-vertical[disabled][disabled] {
-  color: rgba(255, 255, 255, 0.3);
+
+.navbar .navbar-nav > li > a.btn {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
-fieldset[disabled][disabled] .btn.btn-raised, fieldset[disabled][disabled] .btn.btn-raised.active, fieldset[disabled][disabled] .btn.btn-raised:active, fieldset[disabled][disabled] .btn.btn-raised:focus:not(:active), fieldset[disabled][disabled] .btn.btn-group-raised, fieldset[disabled][disabled] .btn.btn-group-raised.active, fieldset[disabled][disabled] .btn.btn-group-raised:active, fieldset[disabled][disabled] .btn.btn-group-raised:focus:not(:active), .btn.disabled.btn-raised, .btn.disabled.btn-raised.active, .btn.disabled.btn-raised:active, .btn.disabled.btn-raised:focus:not(:active), .btn.disabled.btn-group-raised, .btn.disabled.btn-group-raised.active, .btn.disabled.btn-group-raised:active, .btn.disabled.btn-group-raised:focus:not(:active), .btn:disabled.btn-raised, .btn:disabled.btn-raised.active, .btn:disabled.btn-raised:active, .btn:disabled.btn-raised:focus:not(:active), .btn:disabled.btn-group-raised, .btn:disabled.btn-group-raised.active, .btn:disabled.btn-group-raised:active, .btn:disabled.btn-group-raised:focus:not(:active), .btn[disabled][disabled].btn-raised, .btn[disabled][disabled].btn-raised.active, .btn[disabled][disabled].btn-raised:active, .btn[disabled][disabled].btn-raised:focus:not(:active), .btn[disabled][disabled].btn-group-raised, .btn[disabled][disabled].btn-group-raised.active, .btn[disabled][disabled].btn-group-raised:active, .btn[disabled][disabled].btn-group-raised:focus:not(:active), fieldset[disabled][disabled]
-.input-group-btn .btn.btn-raised, fieldset[disabled][disabled]
-.input-group-btn .btn.btn-raised.active, fieldset[disabled][disabled]
-.input-group-btn .btn.btn-raised:active, fieldset[disabled][disabled]
-.input-group-btn .btn.btn-raised:focus:not(:active), fieldset[disabled][disabled]
-.input-group-btn .btn.btn-group-raised, fieldset[disabled][disabled]
-.input-group-btn .btn.btn-group-raised.active, fieldset[disabled][disabled]
-.input-group-btn .btn.btn-group-raised:active, fieldset[disabled][disabled]
-.input-group-btn .btn.btn-group-raised:focus:not(:active),
-.input-group-btn .btn.disabled.btn-raised,
-.input-group-btn .btn.disabled.btn-raised.active,
-.input-group-btn .btn.disabled.btn-raised:active,
-.input-group-btn .btn.disabled.btn-raised:focus:not(:active),
-.input-group-btn .btn.disabled.btn-group-raised,
-.input-group-btn .btn.disabled.btn-group-raised.active,
-.input-group-btn .btn.disabled.btn-group-raised:active,
-.input-group-btn .btn.disabled.btn-group-raised:focus:not(:active),
-.input-group-btn .btn:disabled.btn-raised,
-.input-group-btn .btn:disabled.btn-raised.active,
-.input-group-btn .btn:disabled.btn-raised:active,
-.input-group-btn .btn:disabled.btn-raised:focus:not(:active),
-.input-group-btn .btn:disabled.btn-group-raised,
-.input-group-btn .btn:disabled.btn-group-raised.active,
-.input-group-btn .btn:disabled.btn-group-raised:active,
-.input-group-btn .btn:disabled.btn-group-raised:focus:not(:active),
-.input-group-btn .btn[disabled][disabled].btn-raised,
-.input-group-btn .btn[disabled][disabled].btn-raised.active,
-.input-group-btn .btn[disabled][disabled].btn-raised:active,
-.input-group-btn .btn[disabled][disabled].btn-raised:focus:not(:active),
-.input-group-btn .btn[disabled][disabled].btn-group-raised,
-.input-group-btn .btn[disabled][disabled].btn-group-raised.active,
-.input-group-btn .btn[disabled][disabled].btn-group-raised:active,
-.input-group-btn .btn[disabled][disabled].btn-group-raised:focus:not(:active), fieldset[disabled][disabled]
-.btn-group.btn-raised, fieldset[disabled][disabled]
-.btn-group.btn-raised.active, fieldset[disabled][disabled]
-.btn-group.btn-raised:active, fieldset[disabled][disabled]
-.btn-group.btn-raised:focus:not(:active), fieldset[disabled][disabled]
-.btn-group.btn-group-raised, fieldset[disabled][disabled]
-.btn-group.btn-group-raised.active, fieldset[disabled][disabled]
-.btn-group.btn-group-raised:active, fieldset[disabled][disabled]
-.btn-group.btn-group-raised:focus:not(:active),
-.btn-group.disabled.btn-raised,
-.btn-group.disabled.btn-raised.active,
-.btn-group.disabled.btn-raised:active,
-.btn-group.disabled.btn-raised:focus:not(:active),
-.btn-group.disabled.btn-group-raised,
-.btn-group.disabled.btn-group-raised.active,
-.btn-group.disabled.btn-group-raised:active,
-.btn-group.disabled.btn-group-raised:focus:not(:active),
-.btn-group:disabled.btn-raised,
-.btn-group:disabled.btn-raised.active,
-.btn-group:disabled.btn-raised:active,
-.btn-group:disabled.btn-raised:focus:not(:active),
-.btn-group:disabled.btn-group-raised,
-.btn-group:disabled.btn-group-raised.active,
-.btn-group:disabled.btn-group-raised:active,
-.btn-group:disabled.btn-group-raised:focus:not(:active),
-.btn-group[disabled][disabled].btn-raised,
-.btn-group[disabled][disabled].btn-raised.active,
-.btn-group[disabled][disabled].btn-raised:active,
-.btn-group[disabled][disabled].btn-raised:focus:not(:active),
-.btn-group[disabled][disabled].btn-group-raised,
-.btn-group[disabled][disabled].btn-group-raised.active,
-.btn-group[disabled][disabled].btn-group-raised:active,
-.btn-group[disabled][disabled].btn-group-raised:focus:not(:active), fieldset[disabled][disabled]
-.btn-group-vertical.btn-raised, fieldset[disabled][disabled]
-.btn-group-vertical.btn-raised.active, fieldset[disabled][disabled]
-.btn-group-vertical.btn-raised:active, fieldset[disabled][disabled]
-.btn-group-vertical.btn-raised:focus:not(:active), fieldset[disabled][disabled]
-.btn-group-vertical.btn-group-raised, fieldset[disabled][disabled]
-.btn-group-vertical.btn-group-raised.active, fieldset[disabled][disabled]
-.btn-group-vertical.btn-group-raised:active, fieldset[disabled][disabled]
-.btn-group-vertical.btn-group-raised:focus:not(:active),
-.btn-group-vertical.disabled.btn-raised,
-.btn-group-vertical.disabled.btn-raised.active,
-.btn-group-vertical.disabled.btn-raised:active,
-.btn-group-vertical.disabled.btn-raised:focus:not(:active),
-.btn-group-vertical.disabled.btn-group-raised,
-.btn-group-vertical.disabled.btn-group-raised.active,
-.btn-group-vertical.disabled.btn-group-raised:active,
-.btn-group-vertical.disabled.btn-group-raised:focus:not(:active),
-.btn-group-vertical:disabled.btn-raised,
-.btn-group-vertical:disabled.btn-raised.active,
-.btn-group-vertical:disabled.btn-raised:active,
-.btn-group-vertical:disabled.btn-raised:focus:not(:active),
-.btn-group-vertical:disabled.btn-group-raised,
-.btn-group-vertical:disabled.btn-group-raised.active,
-.btn-group-vertical:disabled.btn-group-raised:active,
-.btn-group-vertical:disabled.btn-group-raised:focus:not(:active),
-.btn-group-vertical[disabled][disabled].btn-raised,
-.btn-group-vertical[disabled][disabled].btn-raised.active,
-.btn-group-vertical[disabled][disabled].btn-raised:active,
-.btn-group-vertical[disabled][disabled].btn-raised:focus:not(:active),
-.btn-group-vertical[disabled][disabled].btn-group-raised,
-.btn-group-vertical[disabled][disabled].btn-group-raised.active,
-.btn-group-vertical[disabled][disabled].btn-group-raised:active,
-.btn-group-vertical[disabled][disabled].btn-group-raised:focus:not(:active) {
-  box-shadow: none;
+.navbar .navbar-nav > li > a.btn.btn-fab {
+  margin: 5px 2px;
+}
+.navbar .navbar-nav > li > a:not(.btn) .material-icons {
+  margin-top: -3px;
+  top: 0px;
+  position: relative;
+  margin-right: 3px;
+}
+.navbar .navbar-nav > li > .profile-photo {
+  margin: 5px 2px;
+}
+
+.navbar-default:not(.navbar-transparent) .navbar-nav > li > a.btn.btn-white.btn-simple {
+  color: #555555;
 }
 
 .btn-group,
@@ -633,7 +882,11 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
   opacity: 0;
   margin: 0;
   top: 0;
-  transform: scale3d(2.3, 2.3, 1);
+  -webkit-transform: scale3d(2.3,2.3,1);
+  -moz-transform: scale3d(2.3,2.3,1);
+  -o-transform: scale3d(2.3,2.3,1);
+  -ms-transform: scale3d(2.3,2.3,1);
+  transform: scale3d(2.3,2.3,1);
 }
 .checkbox .checkbox-material .check {
   position: relative;
@@ -656,6 +909,10 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
   height: 0;
   background: red;
   box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+  -webkit-animation: checkbox-off 0.3s forwards;
+  -moz-animation: checkbox-off 0.3s forwards;
+  -o-animation: checkbox-off 0.3s forwards;
+  -ms-animation: checkbox-off 0.3s forwards;
   animation: checkbox-off 0.3s forwards;
 }
 .checkbox input[type=checkbox]:focus + .checkbox-material .check:after {
@@ -667,18 +924,38 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
 .checkbox input[type=checkbox]:checked + .checkbox-material .check:before {
   color: #FFFFFF;
   box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0px 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  -webkit-animation: checkbox-on 0.3s forwards;
+  -moz-animation: checkbox-on 0.3s forwards;
+  -o-animation: checkbox-on 0.3s forwards;
+  -ms-animation: checkbox-on 0.3s forwards;
   animation: checkbox-on 0.3s forwards;
 }
 .checkbox input[type=checkbox]:checked + .checkbox-material:before {
+  -webkit-animation: rippleOn 500ms;
+  -moz-animation: rippleOn 500ms;
+  -o-animation: rippleOn 500ms;
+  -ms-animation: rippleOn 500ms;
   animation: rippleOn 500ms;
 }
 .checkbox input[type=checkbox]:checked + .checkbox-material .check:after {
+  -webkit-animation: rippleOn 500ms forwards;
+  -moz-animation: rippleOn 500ms forwards;
+  -o-animation: rippleOn 500ms forwards;
+  -ms-animation: rippleOn 500ms forwards;
   animation: rippleOn 500ms forwards;
 }
 .checkbox input[type=checkbox]:not(:checked) + .checkbox-material:before {
+  -webkit-animation: rippleOff 500ms;
+  -moz-animation: rippleOff 500ms;
+  -o-animation: rippleOff 500ms;
+  -ms-animation: rippleOff 500ms;
   animation: rippleOff 500ms;
 }
 .checkbox input[type=checkbox]:not(:checked) + .checkbox-material .check:after {
+  -webkit-animation: rippleOff 500ms;
+  -moz-animation: rippleOff 500ms;
+  -o-animation: rippleOff 500ms;
+  -ms-animation: rippleOff 500ms;
   animation: rippleOff 500ms;
 }
 fieldset[disabled] .checkbox, fieldset[disabled] .checkbox input[type=checkbox],
@@ -834,7 +1111,11 @@ fieldset[disabled] .form-group.is-focused .radio label {
   width: 15px;
   border-radius: 100%;
   background-color: #9c27b0;
-  transform: scale3d(0, 0, 0);
+  -webkit-transform: scale3d(0,0,0);
+  -moz-transform: scale3d(0,0,0);
+  -o-transform: scale3d(0,0,0);
+  -ms-transform: scale3d(0,0,0);
+  transform: scale3d(0,0,0);
 }
 .radio label .check:after {
   display: block;
@@ -849,13 +1130,25 @@ fieldset[disabled] .form-group.is-focused .radio label {
   z-index: 1;
   opacity: 0;
   margin: 0;
-  transform: scale3d(1.5, 1.5, 1);
+  -webkit-transform: scale3d(1.5,1.5,1);
+  -moz-transform: scale3d(1.5,1.5,1);
+  -o-transform: scale3d(1.5,1.5,1);
+  -ms-transform: scale3d(1.5,1.5,1);
+  transform: scale3d(1.5,1.5,1);
 }
 .radio label input[type=radio]:not(:checked) ~ .check:after {
+  -webkit-animation: rippleOff 500ms;
+  -moz-animation: rippleOff 500ms;
+  -o-animation: rippleOff 500ms;
+  -ms-animation: rippleOff 500ms;
   animation: rippleOff 500ms;
 }
 .radio label input[type=radio]:checked ~ .check:after {
-  animation: rippleOn 500ms;
+  -webkit-animation: rippleOff 500ms;
+  -moz-animation: rippleOff 500ms;
+  -o-animation: rippleOff 500ms;
+  -ms-animation: rippleOff 500ms;
+  animation: rippleOff 500ms;
 }
 .radio input[type=radio] {
   opacity: 0;
@@ -873,6 +1166,10 @@ fieldset[disabled] .form-group.is-focused .radio label {
   border-color: #9c27b0;
 }
 .radio input[type=radio]:checked ~ .check {
+  -webkit-transform: scale3d(0.65, 0.65, 1);
+  -moz-transform: scale3d(0.65, 0.65, 1);
+  -o-transform: scale3d(0.65, 0.65, 1);
+  -ms-transform: scale3d(0.65, 0.65, 1);
   transform: scale3d(0.65, 0.65, 1);
 }
 .radio input[type=radio][disabled] ~ .check, .radio input[type=radio][disabled] ~ .circle {
@@ -1544,7 +1841,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   background-color: #9c27b0;
   border-color: #9c27b0;
   color: #FFFFFF;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
 }
 .pagination.pagination-info > .active > a, .pagination.pagination-info > .active > a:focus, .pagination.pagination-info > .active > a:hover,
 .pagination.pagination-info > .active > span,
@@ -1552,6 +1849,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .pagination.pagination-info > .active > span:hover {
   background-color: #03a9f4;
   border-color: #03a9f4;
+  box-shadow: 0 4px 5px 0 rgba(3, 169, 244, 0.14), 0 1px 10px 0 rgba(3, 169, 244, 0.12), 0 2px 4px -1px rgba(3, 169, 244, 0.2);
 }
 .pagination.pagination-success > .active > a, .pagination.pagination-success > .active > a:focus, .pagination.pagination-success > .active > a:hover,
 .pagination.pagination-success > .active > span,
@@ -1559,6 +1857,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .pagination.pagination-success > .active > span:hover {
   background-color: #4caf50;
   border-color: #4caf50;
+  box-shadow: 0 4px 5px 0 rgba(76, 175, 80, 0.14), 0 1px 10px 0 rgba(76, 175, 80, 0.12), 0 2px 4px -1px rgba(76, 175, 80, 0.2);
 }
 .pagination.pagination-warning > .active > a, .pagination.pagination-warning > .active > a:focus, .pagination.pagination-warning > .active > a:hover,
 .pagination.pagination-warning > .active > span,
@@ -1566,6 +1865,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .pagination.pagination-warning > .active > span:hover {
   background-color: #fbc02d;
   border-color: #fbc02d;
+  box-shadow: 0 4px 5px 0 rgba(251, 192, 45, 0.14), 0 1px 10px 0 rgba(251, 192, 45, 0.12), 0 2px 4px -1px rgba(251, 192, 45, 0.2);
 }
 .pagination.pagination-danger > .active > a, .pagination.pagination-danger > .active > a:focus, .pagination.pagination-danger > .active > a:hover,
 .pagination.pagination-danger > .active > span,
@@ -1573,13 +1873,17 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .pagination.pagination-danger > .active > span:hover {
   background-color: #f44336;
   border-color: #f44336;
+  box-shadow: 0 4px 5px 0 rgba(244, 67, 54, 0.14), 0 1px 10px 0 rgba(244, 67, 54, 0.12), 0 2px 4px -1px rgba(244, 67, 54, 0.2);
 }
 
 .label {
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 5px 12px;
   text-transform: uppercase;
   font-size: 10px;
+}
+.label.label-default {
+  background-color: #999999;
 }
 
 .nav-pills > li > a {
@@ -1592,6 +1896,9 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   color: #555555;
   transition: all .3s;
 }
+.nav-pills > li > a:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+}
 .nav-pills > li i {
   display: block;
   font-size: 30px;
@@ -1600,19 +1907,27 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   background-color: #9c27b0;
   color: #FFFFFF;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
 }
 .nav-pills.nav-pills-info > li.active > a, .nav-pills.nav-pills-info > li.active > a:focus, .nav-pills.nav-pills-info > li.active > a:hover {
   background-color: #03a9f4;
+  box-shadow: 0 16px 26px -10px rgba(3, 169, 244, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(3, 169, 244, 0.2);
 }
 .nav-pills.nav-pills-success > li.active > a, .nav-pills.nav-pills-success > li.active > a:focus, .nav-pills.nav-pills-success > li.active > a:hover {
   background-color: #4caf50;
+  box-shadow: 0 16px 26px -10px rgba(76, 175, 80, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2);
 }
 .nav-pills.nav-pills-warning > li.active > a, .nav-pills.nav-pills-warning > li.active > a:focus, .nav-pills.nav-pills-warning > li.active > a:hover {
   background-color: #fbc02d;
+  box-shadow: 0 16px 26px -10px rgba(251, 192, 45, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(251, 192, 45, 0.2);
 }
 .nav-pills.nav-pills-danger > li.active > a, .nav-pills.nav-pills-danger > li.active > a:focus, .nav-pills.nav-pills-danger > li.active > a:hover {
   background-color: #f44336;
+  box-shadow: 0 16px 26px -10px rgba(244, 67, 54, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+}
+
+.tab-space {
+  padding: 20px 0 50px 0px;
 }
 
 footer {
@@ -1654,10 +1969,9 @@ legend {
 }
 
 .navbar {
-  background-color: #9c27b0;
   border: 0;
   border-radius: 3px;
-  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42), 0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
 }
 .navbar .navbar-brand {
@@ -1680,7 +1994,7 @@ legend {
   color: inherit;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
   border-radius: 3px;
@@ -1692,13 +2006,13 @@ legend {
 .navbar .navbar-nav > li > a .material-icons,
 .navbar .navbar-nav > li > a .fa {
   font-size: 20px;
-  margin-top: -3px;
-  margin-right: 3px;
-  margin: -3px 4px 0 4px;
+  max-width: 20px;
 }
-.navbar .navbar-nav > li > a .fa {
-  top: 2px;
+.navbar .navbar-nav > li > a:not(.btn-just-icon) .fa {
   position: relative;
+  top: 2px;
+  margin-top: -4px;
+  margin-right: 4px;
 }
 .navbar .navbar-nav > li > .dropdown-menu {
   margin-top: -20px;
@@ -1768,6 +2082,9 @@ legend {
     background-color: transparent;
   }
 }
+.navbar.navbar-default .logo-container .brand {
+  color: #555555;
+}
 .navbar .navbar-link {
   color: inherit;
 }
@@ -1788,7 +2105,7 @@ legend {
   color: inherit;
 }
 .navbar .navbar-form {
-  margin-top: 16px;
+  margin: 4px 0 0;
 }
 .navbar .navbar-form .form-group {
   margin: 0;
@@ -2026,17 +2343,26 @@ legend {
 .navbar.navbar-transparent {
   background-color: transparent;
   box-shadow: none;
+  color: #fff;
+  padding-top: 25px;
+}
+.navbar.navbar-transparent .logo-container .brand {
+  color: #FFFFFF;
 }
 .navbar-fixed-top {
   border-radius: 0;
 }
 @media (max-width: 1199px) {
+  .navbar {
+    /*
+        .navbar-form {
+          margin-top: 10px;
+        }
+    */
+  }
   .navbar .navbar-brand {
     height: 50px;
     padding: 10px 15px;
-  }
-  .navbar .navbar-form {
-    margin-top: 10px;
   }
   .navbar .navbar-nav > li > a {
     padding-top: 15px;
@@ -2106,6 +2432,41 @@ legend {
     margin-top: 1px;
   }
 }
+.info {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 70px 0 30px;
+}
+.info .icon {
+  color: #999999;
+}
+.info .icon > i {
+  font-size: 4.4em;
+}
+.info .info-title {
+  color: #3C4858;
+  margin: 30px 0 15px;
+}
+.info p {
+  color: #999999;
+}
+
+.icon.icon-primary {
+  color: #9c27b0;
+}
+.icon.icon-info {
+  color: #03a9f4;
+}
+.icon.icon-success {
+  color: #4caf50;
+}
+.icon.icon-warning {
+  color: #fbc02d;
+}
+.icon.icon-danger {
+  color: #f44336;
+}
+
 .alert {
   border: 0;
   border-radius: 0;
@@ -2260,6 +2621,43 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading {
+  font-weight: 700;
+}
+.title,
+.title a,
+.card-title,
+.card-title a,
+.info-title,
+.info-title a,
+.footer-brand,
+.footer-brand a,
+.footer-big h5,
+.footer-big h5 a,
+.footer-big h4,
+.footer-big h4 a,
+.media .media-heading,
+.media .media-heading a {
+  color: #3C4858;
+  text-decoration: none;
+}
+
+h2.title {
+  margin-bottom: 30px;
+}
+
+.description,
+.card-description,
+.footer-big p {
+  color: #999999;
+}
+
 .text-warning {
   color: #fbc02d;
 }
@@ -2345,10 +2743,24 @@ h6, .h6 {
   line-height: 1.4;
 }
 
-.tooltip, .tooltip.in {
+.tooltip.in {
   opacity: 1;
+  -webkit-transform: translate3d(0, 0px, 0);
+  -moz-transform: translate3d(0, 0px, 0);
+  -o-transform: translate3d(0, 0px, 0);
+  -ms-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0px, 0);
 }
 
+.tooltip {
+  opacity: 0;
+  transition: opacity, transform .2s ease;
+  -webkit-transform: translate3d(0, 5px, 0);
+  -moz-transform: translate3d(0, 5px, 0);
+  -o-transform: translate3d(0, 5px, 0);
+  -ms-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+}
 .tooltip.left .tooltip-arrow {
   border-left-color: #FFFFFF;
 }
@@ -3198,32 +3610,6 @@ h2.title {
 .features {
   padding: 80px 0 0;
 }
-.features .feature {
-  max-width: 360px;
-  margin: 0 auto;
-}
-.features .feature > i {
-  font-size: 60px;
-}
-.features .feature h4 {
-  color: #3C4858;
-  margin: 30px 0 15px;
-}
-.features .feature.feature-primary > i {
-  color: #9c27b0;
-}
-.features .feature.feature-info > i {
-  color: #03a9f4;
-}
-.features .feature.feature-success > i {
-  color: #4caf50;
-}
-.features .feature.feature-warning > i {
-  color: #fbc02d;
-}
-.features .feature.feature-danger > i {
-  color: #f44336;
-}
 
 .team {
   margin-top: 80px;
@@ -3342,6 +3728,15 @@ h2.title {
   padding-top: 25px;
 }
 
+@media (max-width: 991px) {
+  .landing-page .header {
+    height: auto;
+    min-height: 100vh;
+  }
+  .landing-page .header .container {
+    padding-bottom: 70px;
+  }
+}
 @media (max-width: 768px) {
   .footer .copyright {
     display: inline-block;
@@ -3362,3 +3757,5 @@ h2.title {
     margin-right: 10px;
   }
 }
+
+/*# sourceMappingURL=material-kit.css.map */

@@ -31,7 +31,7 @@
             background-color: $brand-primary;
             border-color: $brand-primary;
             color: $white-color;
-            @include shadow-4dp();
+            @include shadow-4dp-color($brand-primary);
         }
 
     }
@@ -45,6 +45,7 @@
             &:hover{
                 background-color: $brand-info;
                 border-color: $brand-info;
+                @include shadow-4dp-color($brand-info);
             }
         }
     }
@@ -57,6 +58,7 @@
             &:hover{
                 background-color: $brand-success;
                 border-color: $brand-success;
+                @include shadow-4dp-color($brand-success);
             }
         }
     }
@@ -69,6 +71,7 @@
             &:hover{
                 background-color: $brand-warning;
                 border-color: $brand-warning;
+                @include shadow-4dp-color($brand-warning);
             }
         }
     }
@@ -81,6 +84,7 @@
             &:hover{
                 background-color: $brand-danger;
                 border-color: $brand-danger;
+                @include shadow-4dp-color($brand-danger);
             }
         }
     }

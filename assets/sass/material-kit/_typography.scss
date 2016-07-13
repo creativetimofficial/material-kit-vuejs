@@ -24,6 +24,31 @@ h6, .h6{
     text-transform: uppercase;
 }
 
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading{
+    font-weight: $font-weight-extra-bold;
+    &,
+    a{
+        color: $black-color;
+        text-decoration: none;
+    }
+}
+
+h2.title{
+    margin-bottom: $margin-base * 2;
+}
+
+.description,
+.card-description,
+.footer-big p{
+    color: $gray-light;
+}
+
 .text-warning {
   color: $brand-warning;
 }
