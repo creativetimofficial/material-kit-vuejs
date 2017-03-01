@@ -188,18 +188,18 @@ export default {
                     <h4>Sizes</h4>
                     <p>Buttons come in all needed sizes:</p>
                     <p>
-                      <button class="btn btn-primary btn-lg">Large</button>
-                      <button class="btn btn-primary">Normal</button>
-                      <button class="btn btn-primary btn-sm">Small</button>
-                      <button class="btn btn-primary btn-xs">Extra Small</button>
+                      <mk-button class="btn-primary btn-lg">Large</mk-button>
+                      <mk-button class="btn-primary">Normal</mk-button>
+                      <mk-button class="btn-primary btn-sm">Small</mk-button>
+                      <mk-button class="btn-primary btn-xs">Extra Small</mk-button>
                     </p>
 
                     <pre class="prettyprint">
 
-  &lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Large&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary&quot;&gt;Normal&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Small&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-xs&quot;&gt;Extra Small&lt;/button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-lg&quot;&gt;Large&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary&quot;&gt;Normal&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-sm&quot;&gt;Small&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-xs&quot;&gt;Extra Small&lt;/mk-button&gt;
             </pre>
 
                     <h4>Styles</h4>
@@ -207,34 +207,33 @@ export default {
                       corners buttons or plain simple buttons. Let's see some examples:
                     </p>
                     <p>
-                      <button class="btn btn-primary">Default</button>
-                      <button class="btn btn-primary btn-round">Round</button>
-                      <button class="btn btn-primary btn-round">
-              <i class="material-icons">favorite</i> With Icon
-            </button>
-                      <button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-              <i class="material-icons">favorite</i>
-            </button>
-                      <button class="btn btn-primary btn-just-icon">
-              <i class="material-icons">favorite</i>
-            </button>
-                      <button class="btn btn-primary btn-simple">Simple</button>
-
+                      <mk-button class="btn-primary">Default</mk-button>
+                      <mk-button class="btn-primary btn-round">Round</mk-button>
+                      <mk-button class="btn-primary btn-round">
+                        <i class="material-icons">favorite</i> With Icon
+                      </mk-button>
+                      <mk-button class="btn-primary btn-fab btn-fab-mini btn-round">
+                        <i class="material-icons">favorite</i>
+                      </mk-button>
+                      <mk-button class="btn-primary btn-just-icon">
+                        <i class="material-icons">favorite</i>
+                      </mk-button>
+                      <mk-button class="btn-primary btn-simple">Simple</mk-button>
                     </p>
 
                     <pre class="prettyprint">
-  &lt;button class=&quot;btn btn-primary&quot;&gt;Default&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-round&quot;&gt;Round&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-round&quot;&gt;
+  &lt;mk-button class=&quot;btn-primary&quot;&gt;Default&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-round&quot;&gt;Round&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-round&quot;&gt;
     &lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt; With Icon
-  &lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-fab btn-fab-mini btn-round&quot;&gt;
+  &lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-fab btn-fab-mini btn-round&quot;&gt;
     &lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt;
-  &lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-just-icon&quot;&gt;
+  &lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-just-icon&quot;&gt;
     &lt;i class=&quot;material-icons&quot;&gt;favorite&lt;/i&gt;
-  &lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary btn-simple&quot;&gt;Simple&lt;/button&gt;
+  &lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary btn-simple&quot;&gt;Simple&lt;/mk-button&gt;
             </pre>
 
                     <p>
