@@ -5,7 +5,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button id="menu-toggle" type="button" class="navbar-toggle" data-target="#navigation-doc">
-          <span class="sr-only">Toggle navaigation</span>
+          <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar bar1"></span>
           <span class="icon-bar bar2"></span>
           <span class="icon-bar bar3"></span>
