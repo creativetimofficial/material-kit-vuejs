@@ -1,4 +1,5 @@
-@import '@/assets/sass/variables';
+@import '../../assets/sass/_variables.scss';
+@import '../../assets/sass/_mixins.scss';
 .btn,
 .navbar .navbar-nav>li>a.btn {
   border: none;

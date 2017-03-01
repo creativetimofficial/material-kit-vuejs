@@ -1,3 +1,81 @@
+<script>
+import MkButton from '@/components/mkButton'
+
+export default {
+  name: 'home',
+  components: {
+    MkButton
+  }
+}
+</script>
+
+<style>
+  pre.prettyprint {
+    background-color: #eee;
+    border: 0px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .atv,
+  .str {
+    color: #05AE0E;
+  }
+  
+  .tag,
+  .pln,
+  .kwd {
+    color: #3472F7;
+  }
+  
+  .atn {
+    color: #2C93FF;
+  }
+  
+  .pln {
+    color: #333;
+  }
+  
+  .com {
+    color: #999;
+  }
+  
+  .space-top {
+    margin-top: 50px;
+  }
+  
+  .btn-primary .caret {
+    border-top-color: #3472F7;
+    color: #3472F7;
+  }
+  
+  .area-line {
+    border: 1px solid #999;
+    border-left: 0;
+    border-right: 0;
+    color: #666;
+    display: block;
+    margin-top: 20px;
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+  .area-line a {
+    color: #666;
+  }
+  
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .table-shopping .td-name {
+    min-width: 130px;
+  }
+</style>
+
 <template>
   <div id="home">
     <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll" role="navigation">
@@ -90,6 +168,7 @@
                     <h4>Colors</h4>
                     <p>We worked over the original Bootstrap classes, choosing a different, slightly intenser color pallete:</p>
                     <p>
+                      <mk-button></mk-button>
                       <button class="btn btn-default">Default</button>
                       <button class="btn btn-primary">Primary</button>
                       <button class="btn btn-info">Info</button>
@@ -1669,76 +1748,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: 'home',
-}
-</script>
-
-<style>
-  pre.prettyprint {
-    background-color: #eee;
-    border: 0px;
-    margin-bottom: 60px;
-    margin-top: 30px;
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .atv,
-  .str {
-    color: #05AE0E;
-  }
-  
-  .tag,
-  .pln,
-  .kwd {
-    color: #3472F7;
-  }
-  
-  .atn {
-    color: #2C93FF;
-  }
-  
-  .pln {
-    color: #333;
-  }
-  
-  .com {
-    color: #999;
-  }
-  
-  .space-top {
-    margin-top: 50px;
-  }
-  
-  .btn-primary .caret {
-    border-top-color: #3472F7;
-    color: #3472F7;
-  }
-  
-  .area-line {
-    border: 1px solid #999;
-    border-left: 0;
-    border-right: 0;
-    color: #666;
-    display: block;
-    margin-top: 20px;
-    padding: 8px 0;
-    text-align: center;
-  }
-  
-  .area-line a {
-    color: #666;
-  }
-  
-  .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  .table-shopping .td-name {
-    min-width: 130px;
-  }
-</style>
