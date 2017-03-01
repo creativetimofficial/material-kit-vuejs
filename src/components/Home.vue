@@ -1,15 +1,18 @@
 <script>
 import MkButton from './mkButton'
+import MkCheckbox from './mkCheckbox'
 
 export default {
   name: 'home',
   components: {
     MkButton,
+    MkCheckbox,
   },
 }
 </script>
 
 <style>
+  @import '../assets/sass/_core.scss';
   pre.prettyprint {
     background-color: #eee;
     border: 0px;

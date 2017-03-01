@@ -52,7 +52,7 @@ a, a:hover, a:focus {
 }
 
 @import '_form';
-//@import '_welljumbo';   // Not designed yet by Creative Tim, you can use it as it is
+// @import '_welljumbo'; Not designed yet by Creative Tim, you can use it as it is
 @import '_buttons';
 @import '_checkboxes';
 @import '_togglebutton';
@@ -67,7 +67,7 @@ legend {
   border-bottom: 0;
 }
 
-//@import '_lists';  // Not designed yet by Creative Tim, you can use it as it is
+//@ import '_lists'; Not designed yet by Creative Tim, you can use it as it is
 @import '_navbar';
 
 @import '_dropdown';
