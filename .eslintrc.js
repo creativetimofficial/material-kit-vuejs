@@ -24,6 +24,8 @@ module.exports = {
   },
   // add your custom rules here
   'rules': {
+    'semi': ['warn', 'never'],
+    'comma-dangle': ['warn', 'always'],
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'js': 'never',
