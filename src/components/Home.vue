@@ -1,11 +1,11 @@
 <script>
-import MkButton from '@/components/mkButton'
+import MkButton from './mkButton'
 
 export default {
   name: 'home',
   components: {
-    MkButton
-  }
+    MkButton,
+  },
 }
 </script>
 
@@ -168,28 +168,23 @@ export default {
                     <h4>Colors</h4>
                     <p>We worked over the original Bootstrap classes, choosing a different, slightly intenser color pallete:</p>
                     <p>
-                      <mk-button></mk-button>
-                      <button class="btn btn-default">Default</button>
-                      <button class="btn btn-primary">Primary</button>
-                      <button class="btn btn-info">Info</button>
-                      <button class="btn btn-success">Success</button><br/>
-                      <button class="btn btn-warning">Warning</button>
-                      <button class="btn btn-danger">Danger</button>
-                      <button class="btn btn-white">White</button>
+                      <mk-button class="btn-default">Default</mk-button>
+                      <mk-button class="btn-primary">Primary</mk-button>
+                      <mk-button class="btn-info">Info</mk-button>
+                      <mk-button class="btn-success">Success</mk-button><br/>
+                      <mk-button class="btn-warning">Warning</mk-button>
+                      <mk-button class="btn-danger">Danger</mk-button>
+                      <mk-button class="btn-white">White</mk-button>
                     </p>
-
                     <pre class="prettyprint">
-
-  &lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
-  &lt;button class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-  &lt;button class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-  &lt;button class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
-  &lt;button class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
-  &lt;button class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-  &lt;button class=&quot;btn btn-white&quot;&gt;White&lt;/button&gt;
-            </pre>
-
-
+  &lt;mk-button class=&quot;btn-default&quot;&gt;Default&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-primary&quot;&gt;Primary&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-info&quot;&gt;Info&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-success&quot;&gt;Success&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-warning&quot;&gt;Warning&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-danger&quot;&gt;Danger&lt;/mk-button&gt;
+  &lt;mk-button class=&quot;btn-white&quot;&gt;White&lt;/mk-button&gt;
+                    </pre>
                     <h4>Sizes</h4>
                     <p>Buttons come in all needed sizes:</p>
                     <p>
