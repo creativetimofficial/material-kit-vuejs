@@ -13,7 +13,7 @@
           <a href="http://www.creative-tim.com">
             <div class="logo-container">
               <div class="logo">
-                <img src="assets/img/logo.png" alt="Creative Tim Logo">
+                <img src="static/img/logo.png" alt="Creative Tim Logo">
               </div>
               <div class="brand">
                 Creative Tim
@@ -25,9 +25,6 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navigation-doc">
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="index.html">Back to Kit</a>
-            </li>
             <li>
               <a href="https://github.com/timcreative/material-kit/issues">Have an issue?</a>
             </li>
@@ -367,35 +364,35 @@
 
                       <div class="col-md-3 dropdown">
                         <a href="#" class="btn btn-simple dropdown-toggle " data-toggle="dropdown">
-                          <img src="assets/img/flags/US.png" /> Flags
+                          <img src="static/img/flags/US.png" /> Flags
                           <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                           <li>
-                            <a href="#"><img src="assets/img/flags/DE.png" /> Deutsch</a>
+                            <a href="#"><img src="static/img/flags/DE.png" /> Deutsch</a>
                           </li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/GB.png" /> English(UK)</a>
+                            <a href="#"><img src="static/img/flags/GB.png" /> English(UK)</a>
                           </li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/FR.png" /> Français</a>
+                            <a href="#"><img src="static/img/flags/FR.png" /> Français</a>
                           </li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/RO.png" /> Română</a>
+                            <a href="#"><img src="static/img/flags/RO.png" /> Română</a>
                           </li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/IT.png" /> Italiano</a>
+                            <a href="#"><img src="static/img/flags/IT.png" /> Italiano</a>
                           </li>
 
                           <li class="divider"></li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/ES.png" /> Español <span class="label label-default">soon</span></a>
+                            <a href="#"><img src="static/img/flags/ES.png" /> Español <span class="label label-default">soon</span></a>
                           </li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/BR.png" /> Português <span class="label label-default">soon</span></a>
+                            <a href="#"><img src="static/img/flags/BR.png" /> Português <span class="label label-default">soon</span></a>
                           </li>
                           <li>
-                            <a href="#"><img src="assets/img/flags/JP.png" /> 日本語 <span class="label label-default">soon</span></a>
+                            <a href="#"><img src="static/img/flags/JP.png" /> 日本語 <span class="label label-default">soon</span></a>
                           </li>
                         </ul>
                       </div>
